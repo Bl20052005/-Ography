@@ -17,10 +17,12 @@ public class SceneLoader : MonoBehaviour
 
     }
 
+    // Load the scene with the paramter as its name
     public void LoadNextScene(string sceneName){
         StartCoroutine(LoadAnimation(sceneName));
     }
 
+    // Play the animation
     IEnumerator LoadAnimation(string sceneName){
         // Play animation
         transition.SetTrigger("SceneStart");

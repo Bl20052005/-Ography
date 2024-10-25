@@ -13,8 +13,12 @@ public class PuzzleOnePartOne : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Do something
-        HasKey has_key = collision.gameObject.GetComponent<HasKey>();
-        has_key.SetKey(1);
+        if(collision.gameObject.tag == "Player")
+        {
+            HasKey has_key = collision.gameObject.GetComponent<HasKey>();
+            has_key.SetKey(1);
+        }
+
     }
 
     // Start is called before the first frame update

@@ -7,8 +7,10 @@ public class dialogueHandler : MonoBehaviour
 {
     [SerializeField] private Text t;
     [SerializeField] private GameObject dialogueBox;
+    [SerializeField] private GameObject dialogueArrow;
 
     void Start(){
+        dialogueArrow.SetActive(false);
         showDialogueBox();
         displayMessage("hello hello hello\nhihihiihihihi\n");
     }
@@ -23,6 +25,7 @@ public class dialogueHandler : MonoBehaviour
 
     public void displayMessage(string message){
         t.text = "";
+        dialogueArrow.SetActive(false);
         StartCoroutine(displayMessageMaker(message));
     }
 
@@ -31,5 +34,6 @@ public class dialogueHandler : MonoBehaviour
             t.text = t.text + message[i];
             yield return new WaitForSeconds(0.1f);
         }
+        dialogueArrow.SetActive(true);
     }
 }

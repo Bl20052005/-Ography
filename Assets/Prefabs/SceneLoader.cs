@@ -11,8 +11,10 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // Conditions for triggering the transition (currently space key)
         if (Input.GetKeyDown(KeyCode.Space)){
-            LoadNextScene("SceneTransitionTest1");
+            LoadNextScene(""); // Add in the scene name to the parameter.
         }
 
     }

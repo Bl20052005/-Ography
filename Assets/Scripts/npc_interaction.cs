@@ -5,27 +5,40 @@ using UnityEngine;
 public class npc_interaction : MonoBehaviour
 {
     private bool trigger = false;
-    void update()
+    private bool interactionIsTrigger = false;
+
+    void Update()
     {
         if (trigger && Input.GetKeyDown(KeyCode.E))
         {
-            Destroy(this.gameObject);
+            //code for interaction
+            if (!interactionIsTrigger)
+            {
+                interactionIsTrigger = true;
+                //interaction
+            }
+            else
+            {
+                //interaction
+            }
         }
     }
-    // on trigger dialogue
-    void onTriggerEnter(Collider other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+
+        if (other.gameObject.tag == "Player")
         {
             trigger = true;
         }
     }
 
-    void onTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             trigger = false;
         }
     }
+    
 }

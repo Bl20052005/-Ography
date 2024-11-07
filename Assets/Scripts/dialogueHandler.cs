@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class dialogueHandler : MonoBehaviour
+public class DialogueHandler : MonoBehaviour
 {
     [SerializeField] private Text t;
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private GameObject dialogueArrow;
 
+    private Queue<string> sentences;
+
     void Start(){
         dialogueArrow.SetActive(false);
         showDialogueBox();
+        sentences = new Queue<string>();
+
         displayMessage("hello hello hello\nhihihiihihihi\n");
     }
 

@@ -53,6 +53,10 @@ public class spawnOnLoad : MonoBehaviour
                 Debug.Log(spawnManager.GetLocation(4));
                 this.transform.position = spawnManager.GetLocation(4);
             }
+            else if (activeScene == "TownScene" && prevScene == "HiddenRoom")
+            {
+                this.transform.position = spawnManager.GetLocation(5);
+            }
             else
             {
                 this.transform.position = spawnManager.GetLocation(0);

@@ -28,7 +28,7 @@ public class SpawnManager : MonoBehaviour
         InitializeSpawnPoints();
         Instantiate(Player);
 
-        Debug.Log(prevScene + " HEHEHHEHEHEHEHEHEHEHEHEH");
+        Debug.Log(prevScene + " is the prevScene");
 
     }
     void InitializeSpawnPoints()
@@ -36,13 +36,14 @@ public class SpawnManager : MonoBehaviour
 
         spawnList.Add(new Vector2(0f, 0f));                             // 0
                                                                         // Lets make 1 room scenes default entrance be at 0,0
-                                                                        // TOEWN SPAWN POINTS:
+                                                                        // TOWN SPAWN POINTS:
 
         spawnList.Add(new Vector2(3.47f, -7f)); // town npc house 1        1
         spawnList.Add(new Vector2(3.34f, -12.44f)); // town shop           2
         spawnList.Add(new Vector2(-8.8f, 5.54f)); // town PlayerHouse      3
         spawnList.Add(new Vector2(-22.64f, -7.16f)); // town npc house 2   4
-        spawnList.Add(new Vector2(26.02f, 4.22f)); // town hiddenRoom      5
+        spawnList.Add(new Vector2(24.0f, 4.0f)); //  town hiddenRoom       5
+
     }
     public Vector2 GetLocation(int index)
     {

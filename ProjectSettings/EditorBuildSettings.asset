@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TownSpan.unity
+    guid: 8e428c2ae30b1684cb813d53bcc2babb
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
@@ -29,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TownScene.unity
     guid: 1aee94a0b1086fa4fbc23e65e9045f6f
+  - enabled: 1
+    path: Assets/Scenes/TownAnimation.unity
+    guid: ea38515ee2655b940bd9278525810bbc
   m_configObjects: {}

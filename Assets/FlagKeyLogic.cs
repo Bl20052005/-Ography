@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class FlagKeyLogic : MonoBehaviour
 {
-    [SerializeField] static bool key = false;
-    [SerializeField] static bool flag = false;
+    static bool key = false;
+    static bool flag = false;
     private SpriteRenderer my_sprite;
     public Sprite flagSprite;
     public Sprite keySprite;

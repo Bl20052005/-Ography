@@ -7,7 +7,26 @@ using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
+    /* TLDR
 
+    This is a Singleton to maintain spawnPoints for the player across different Scenes
+
+
+    basically spawns the player, and then lets spawnOnLoad determine the coordinates to put the player
+
+    it Maintains a list of Vector2 positions as different spawn points, see below for details
+
+    also has a GetLocation(int), setPrevScene(string) and getPrevScene()
+
+    this is a bit wwonky but 
+    spawnOnLoad.cs has the actual logic for where to spawn the player, currently the logic works by checking the
+    scene to load into and the prev scene we are coming from, and sets spawnpoints based on that
+    Unfortunately the spawnPoints are just magic numbers as of now (0 ,1 , 2, 3) see below for them
+
+    IF YOU MAKE A SCENE WITH 2 EXITS BACK TO THE SAME SCENE THIS WILL PROB NOT WORK SO work around that
+    or fix my spaghetti sorry aha aha
+
+    */
     List<Vector2> spawnList = new List<Vector2>();
 
     [SerializeField] static string prevScene;
@@ -48,10 +67,6 @@ public class SpawnManager : MonoBehaviour
     public Vector2 GetLocation(int index)
     {
         return spawnList[index];
-    }
-    public void addLocation(Vector2 location)
-    {
-        spawnList.Add(location);
     }
     public void SetPrevScene()
     {

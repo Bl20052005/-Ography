@@ -13,10 +13,10 @@ public class PuzzleOnePartOne : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Do something
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
             HasKey has_key = collision.gameObject.GetComponent<HasKey>();
-            has_key.SetKey(1);
+            has_key.SetKey(true);
         }
 
     }
@@ -30,6 +30,6 @@ public class PuzzleOnePartOne : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -6,6 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
+    /*
+TLDR
+
+Loads to a 'LoadScene" scene on CollisionEnter2d
+U NEED TO set loadScene in the editor, transitionTime is just time for the fade effect to last
+
+IN EACH SCENE WITH AT LEAST 1 SCENELOADER U WILL NEED the crossFade animation object,
+ it should be attached as a child to whatever script this is attached to 
+
+ if u have multiple sceneloaders, u still only need 1 crossfade animation item so in that case u dont
+  need it as a child of this object, up 2 u tho
+
+    */
     [SerializeField] Animator transition;
     [SerializeField] float transitionTime = 1f;
     [SerializeField] string loadScene;
@@ -43,7 +57,7 @@ public class SceneLoader : MonoBehaviour
 
         // Load scene
         spawnManager.SetPrevScene();
-        
+
         SceneManager.LoadScene(sceneName);
     }
 }

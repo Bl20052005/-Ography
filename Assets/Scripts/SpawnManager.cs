@@ -57,11 +57,11 @@ public class SpawnManager : MonoBehaviour
                                                                         // Lets make 1 room scenes default entrance be at 0,0
                                                                         // TOWN SPAWN POINTS:
 
-        spawnList.Add(new Vector2(3.47f, -7f)); // town npc house 1        1
-        spawnList.Add(new Vector2(3.34f, -12.44f)); // town shop           2
-        spawnList.Add(new Vector2(-8.8f, 5.54f)); // town PlayerHouse      3
-        spawnList.Add(new Vector2(-22.64f, -7.16f)); // town npc house 2   4
-        spawnList.Add(new Vector2(24.0f, 4.0f)); //  town hiddenRoom       5
+        spawnList.Add(new Vector2(3.15f, -7.3f)); // town npc house 1        1
+        spawnList.Add(new Vector2(3f, -21f)); // town shop           2
+        spawnList.Add(new Vector2(-9.03f, 5.4f)); // town PlayerHouse      3
+        spawnList.Add(new Vector2(-22.6f, -21f)); // town npc house 2   4
+        spawnList.Add(new Vector2(22.58f, 3.34f)); //  town hiddenRoom       5
 
     }
     public Vector2 GetLocation(int index)

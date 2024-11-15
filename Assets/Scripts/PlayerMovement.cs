@@ -6,12 +6,20 @@ public class movement : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D player;
+    [SerializeField] bool canMove = true;
 
     // Start is called before the first frame update
     void Start() { }
 
     // Update is called once per frame
     void Update()
+    {
+
+        if (canMove)
+            Move();
+
+    }
+    void Move()
     {
         Vector3 pos = transform.position;
 
@@ -32,7 +40,16 @@ public class movement : MonoBehaviour
             pos.x += speed * Time.deltaTime;
         }
         transform.position = pos;
+    }
 
+
+    public void disableMovement()
+    {
+        canMove = false;
+    }
+    public void enableMovement()
+    {
+        canMove = true;
     }
 
     private void FixedUpdate() { }

@@ -11,7 +11,7 @@ public class resetEverything : MonoBehaviour
 
     */
 
-    HasKey hasKey;
+    HasKeyorFlag hasKey;
     DestroyOnCollected destroyOnCollected;
 
 

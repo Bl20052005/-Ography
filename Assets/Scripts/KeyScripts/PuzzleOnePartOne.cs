@@ -15,7 +15,7 @@ public class PuzzleOnePartOne : MonoBehaviour
         //Do something
         if (collision.gameObject.tag == "Player")
         {
-            HasKey has_key = collision.gameObject.GetComponent<HasKey>();
+            HasKeyorFlag has_key = collision.gameObject.GetComponent<HasKeyorFlag>();
             has_key.SetKey(true);
         }
 

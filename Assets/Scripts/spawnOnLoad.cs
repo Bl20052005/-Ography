@@ -6,7 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class spawnOnLoad : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /*
+    TLDR
+
+This script sets the player's spawn location when loading into each scene, it is very tied to the SpawnManager.cs so see that too
+
+basically, gets the player's prev scene and currently active scene to determine spawn Locations
+
+SPAWNL+POINTS ARE SET IN SPAWNMANAGER, if u need spawnpoints, go there to add them
+
+if u want to change this to a case switch for legibility instead of if-elses, pls do <3
+    */
     [SerializeField] SpawnManager spawnManager;
     string activeScene;
 
@@ -52,6 +62,10 @@ public class spawnOnLoad : MonoBehaviour
             {
                 Debug.Log(spawnManager.GetLocation(4));
                 this.transform.position = spawnManager.GetLocation(4);
+            }
+            else if (activeScene == "TownScene" && prevScene == "HiddenRoom")
+            {
+                this.transform.position = spawnManager.GetLocation(5);
             }
             else
             {

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class npc_interaction : MonoBehaviour
 {
+    public Dialogue dialogue;
     private bool trigger = false;
     private bool interactionIsTrigger = false;
 
@@ -15,13 +16,21 @@ public class npc_interaction : MonoBehaviour
             if (!interactionIsTrigger)
             {
                 interactionIsTrigger = true;
-                //interaction
+                TriggerDialogue();
             }
             else
             {
-                //interaction
+                ExecuteDialogue();
             }
         }
+    }
+
+    public void TriggerDialogue(){
+        FindObjectOfType<DialogueHandler>().StartDialogue(dialogue);
+    }
+
+    public void ExecuteDialogue(){
+        FindObjectOfType<DialogueHandler>().DisplayNextSentence();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

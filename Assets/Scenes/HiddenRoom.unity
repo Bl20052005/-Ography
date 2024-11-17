@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 90254023}
   - component: {fileID: 90254025}
   - component: {fileID: 90254024}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bot left wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 100923850}
   - component: {fileID: 100923851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 140330398}
   - component: {fileID: 140330400}
   - component: {fileID: 140330399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: left wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 904015477}
   - component: {fileID: 904015479}
   - component: {fileID: 904015478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: right wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 974879849}
   - component: {fileID: 974879851}
   - component: {fileID: 974879850}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EXITWALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,23 +800,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1008110213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7875307386240224197, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
-  m_PrefabInstance: {fileID: 3513223968892955119}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1008110216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008110213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77f38351d455ddf4daac84665dff8921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1081262720
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +811,7 @@ GameObject:
   - component: {fileID: 1081262721}
   - component: {fileID: 1081262723}
   - component: {fileID: 1081262722}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Top wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +941,7 @@ GameObject:
   - component: {fileID: 1090042441}
   - component: {fileID: 1090042443}
   - component: {fileID: 1090042442}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EXITWALLLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1086,7 +1069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1090498475}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boundaries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1127,7 +1110,7 @@ GameObject:
   - component: {fileID: 1410434293}
   - component: {fileID: 1410434295}
   - component: {fileID: 1410434294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: bot right wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584263381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1296,15 +1279,15 @@ PrefabInstance:
       objectReference: {fileID: 3243828442863055052, guid: 5758703162a36674ba99a1f183507176, type: 3}
     - target: {fileID: 8032232461115364307, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8730891
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032232461115364307, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7401214
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032232461115364307, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.11305654
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8032232461115364307, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1350,7 +1333,7 @@ GameObject:
   - component: {fileID: 1964468107}
   - component: {fileID: 1964468109}
   - component: {fileID: 1964468108}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: EXITWALLBOT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,26 +1592,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5315705100972016318, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7875307386240224197, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
       propertyPath: m_Name
       value: Key
       objectReference: {fileID: 0}
-    - target: {fileID: 7875307386240224197, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
-      propertyPath: m_TagString
-      value: Key
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6897595288472286894, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7875307386240224197, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1008110216}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57e2401778d808347afa9efca9a2ab79, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

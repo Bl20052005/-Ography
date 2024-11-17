@@ -30,12 +30,15 @@ IN EACH SCENE WITH AT LEAST 1 SCENELOADER U WILL NEED the crossFade animation ob
     {
         spawnManager = FindObjectOfType<SpawnManager>();
     }
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (loadScene != null)
-                LoadNextScene(loadScene); // Add in the scene name to the parameter.
+            if (Input.GetKey("e"))
+            {
+                if (loadScene != null)
+                    LoadNextScene(loadScene); // Add in the scene name to the parameter.
+            }
         }
     }
 

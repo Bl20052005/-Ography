@@ -34,11 +34,11 @@ IN EACH SCENE WITH AT LEAST 1 SCENELOADER U WILL NEED the crossFade animation ob
     {
         if (other.gameObject.tag == "Player")
         {
-            if (Input.GetKey("e"))
-            {
-                if (loadScene != null)
-                    LoadNextScene(loadScene); // Add in the scene name to the parameter.
-            }
+            // if (Input.GetKey("e"))
+            // {
+            if (loadScene != null)
+                LoadNextScene(loadScene); // Add in the scene name to the parameter.
+                                          // }
         }
     }
 

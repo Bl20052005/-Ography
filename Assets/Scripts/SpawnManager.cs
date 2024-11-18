@@ -27,7 +27,7 @@ public class SpawnManager : MonoBehaviour
     or fix my spaghetti sorry aha aha
 
     */
-    List<Vector2> spawnList = new List<Vector2>();
+    [SerializeField] List<GameObject> spawnList = new List<GameObject>();
 
     [SerializeField] static string prevScene;
     [SerializeField] GameObject Player;
@@ -52,21 +52,24 @@ public class SpawnManager : MonoBehaviour
     }
     void InitializeSpawnPoints()
     {
+        /*
+                spawnList.Add(new Vector2(0f, 0f));                             // 0
+                                                                                // Lets make 1 room scenes default entrance be at 0,0
+                                                                                // TOWN SPAWN POINTS:
 
-        spawnList.Add(new Vector2(0f, 0f));                             // 0
-                                                                        // Lets make 1 room scenes default entrance be at 0,0
-                                                                        // TOWN SPAWN POINTS:
+                spawnList.Add(new Vector2(3.15f, -7.3f)); // town npc house 1        1
+                spawnList.Add(new Vector2(3f, -21f)); // town shop                   2
+                spawnList.Add(new Vector2(-9.03f, 5.4f)); // town PlayerHouse        3
+                spawnList.Add(new Vector2(-22.6f, -21f)); // town npc house 2        4
+                spawnList.Add(new Vector2(10f, 1f)); //  town hiddenRoom             5
 
-        spawnList.Add(new Vector2(3.15f, -7.3f)); // town npc house 1        1
-        spawnList.Add(new Vector2(3f, -21f)); // town shop           2
-        spawnList.Add(new Vector2(-9.03f, 5.4f)); // town PlayerHouse      3
-        spawnList.Add(new Vector2(-22.6f, -21f)); // town npc house 2   4
-        spawnList.Add(new Vector2(22.58f, 3.34f)); //  town hiddenRoom       5
+                */
 
     }
     public Vector2 GetLocation(int index)
     {
-        return spawnList[index];
+        Vector2 location = new Vector2(spawnList[index].transform.position.x, spawnList[index].transform.position.y);
+        return location;
     }
     public void SetPrevScene()
     {

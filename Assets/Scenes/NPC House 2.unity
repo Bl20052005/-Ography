@@ -318,6 +318,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 342463263551160137, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1076
+      objectReference: {fileID: 0}
+    - target: {fileID: 342463263551160137, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.438
+      objectReference: {fileID: 0}
     - target: {fileID: 6758979524151300812, guid: d991e27fdc40db54e876ba7479432d49, type: 3}
       propertyPath: m_Name
       value: SpawnManager

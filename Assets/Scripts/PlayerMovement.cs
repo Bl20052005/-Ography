@@ -30,6 +30,7 @@ public class movement : MonoBehaviour
         if (Input.GetKey("a"))
         {
             pos.x -= speed * Time.deltaTime;
+            transform.Rotate(0,0,speed*200*Time.deltaTime);
         }
         if (Input.GetKey("s"))
         {
@@ -38,6 +39,7 @@ public class movement : MonoBehaviour
         if (Input.GetKey("d"))
         {
             pos.x += speed * Time.deltaTime;
+            transform.Rotate(0,0,-speed*200*Time.deltaTime);
         }
         transform.position = pos;
     }

@@ -3146,6 +3146,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8742538545776668643, guid: b04dd101c54136b449ea4489f7ba1731, type: 3}
   m_PrefabInstance: {fileID: 1457208618}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1467111901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2111909744483958097, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1399925779}
+    - target: {fileID: 3350156246836469244, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_Name
+      value: DialogueUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489563133697110871, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c572573ccaa540c4b5553d0f1b3909e, type: 3}
 --- !u!1001 &1470543417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4107,6 +4208,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1946562013}
   - component: {fileID: 1946562014}
+  - component: {fileID: 1946562016}
+  - component: {fileID: 1946562015}
   m_Layer: 8
   m_Name: ShopClerk
   m_TagString: Untagged
@@ -4124,7 +4227,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.8799996, y: -4.3247004, z: 0.019561147}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 699198809}
@@ -4170,7 +4273,7 @@ SpriteRenderer:
   m_SortingLayerID: 1171189215
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1daaf06bb4aae4e5c94cc8b99a126d75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4181,6 +4284,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1946562015
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946562012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 50, y: 50}
+  m_EdgeRadius: 0
+--- !u!114 &1946562016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946562012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e3663dfcbaf4d4696acfbb7f083897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: L
+    sentences:
+    - "How\u2019ve you been? Need anything from the shop?"
+    - "I\u2019m good, L. Just wanted to say bye before I go."
+    - "\u201CGo\u201D where? Sounds like you\u2019re off someplace far."
+    - "I\u2019m thinking about leaving the village."
+    - "I\u2019m thinking about leaving the village."
+    - "I\u2019m thinking about leaving the village."
+    - What am I supposed to do without an errand boy?
+    - What about J? They could do with some work.
+    - "J? That drunkard\u2019s good for nothing besides gossip and drinking anyway."
+    - Say, that reminds me. Could you do me one last errand then before you run off?
+    - "What\u2019s the favor?"
+    - You seen J around by chance? The drunkard owes me after running off with their
+      last six-pack.
+    - Mind getting them to cough up the money? Or bring them here so I can shake
+      it out of them. Either way works.
+    - "Great! Can\u2019t wait to rip him a new one."
+    names:
+    - L
+    - O
+    - L
+    - O
+    - L
+    - O
+    - L
+    - O
+    - L
+    - L
+    - O
+    - L
+    - L
+    - L
 --- !u!1 &2026632984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4365,3 +4559,4 @@ SceneRoots:
   - {fileID: 1759621886}
   - {fileID: 1889799477}
   - {fileID: 1547559774}
+  - {fileID: 1467111901}

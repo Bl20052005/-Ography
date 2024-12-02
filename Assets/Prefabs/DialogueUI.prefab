@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4679d10f73a354e7899050c32f9f3612, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 8386927942624173257}
+  nameText: {fileID: 8386927942624173257}
   dialogueText: {fileID: 5802901724692328993}
   dialogueBox: {fileID: 330607869499369202}
 --- !u!1 &7456950148643744019

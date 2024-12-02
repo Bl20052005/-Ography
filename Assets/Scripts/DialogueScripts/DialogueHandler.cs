@@ -6,17 +6,20 @@ using UnityEngine.UI;
 
 public class DialogueHandler : MonoBehaviour
 {
-   [SerializeField] private Text name;
+   [SerializeField] private Text nameText;
    [SerializeField] private Text dialogueText;
    [SerializeField] private GameObject dialogueBox;
    private bool dialogueOccuring;
 
 
    private Queue<string> sentences;
+   private Queue<string> names;
 
 
    void Start(){
-       RemoveDialogueBox();
+        sentences = new Queue<string>();
+        names = new Queue<string>();
+        RemoveDialogueBox();
    }
 
 
@@ -28,6 +31,11 @@ public class DialogueHandler : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
+        names.Clear(); 
+        foreach(string name in dialogue.names){
+            names.Enqueue(name);
+        }
+
         DisplayNextSentence();
    }
 
@@ -37,7 +45,8 @@ public class DialogueHandler : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        StartCoroutine(DisplayMessageMaker(sentence));
+        string name = names.Dequeue();
+        StartCoroutine(DisplayMessageMaker(sentence, name));
    }
 
 
@@ -57,8 +66,9 @@ public class DialogueHandler : MonoBehaviour
    }
 
 
-   IEnumerator DisplayMessageMaker(string message){
+   IEnumerator DisplayMessageMaker(string message, string name){
         dialogueText.text = "";
+        nameText.text = name;
         for(int i = 0; i < message.Length; i++){
             dialogueText.text = dialogueText.text + message[i];
             yield return new WaitForSeconds(0.05f);

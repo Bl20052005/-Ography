@@ -1124,13 +1124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707a1ec3d02145d4c91bd87d200cb888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  revert: 0
-  pauseDone: 0
   upTime: 1
   waitOn: 2
   waitOff: 1
-  i: 0
-
   textArray:
   - {fileID: 1721332983}
   - {fileID: 809483557}

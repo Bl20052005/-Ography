@@ -11936,7 +11936,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 4722192856320985537, guid: aaa0bec41eb873d48b95771f6fa32d02, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 1603576339}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1511899876
@@ -12835,7 +12835,7 @@ Transform:
   m_GameObject: {fileID: 1603576335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.3, y: -5.4, z: -9.927605}
+  m_LocalPosition: {x: -17.6, y: -6.7, z: -9.927605}
   m_LocalScale: {x: 0.8039, y: 0.8586984, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12877,7 +12877,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: -8704012865799800001, guid: 807211ec3624cb846a150a9ab554329b, type: 2}
+  - key: {fileID: -5595043894635585755, guid: 807211ec3624cb846a150a9ab554329b, type: 2}
     value: {fileID: 1603576339}
   m_ExposedReferences:
     m_References: []
@@ -12895,7 +12895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 92723199}
   transitionTime: 1
-  loadScene: TownAnimation
+  loadScene: PlayerHouse
 --- !u!1 &1612482109
 GameObject:
   m_ObjectHideFlags: 0
